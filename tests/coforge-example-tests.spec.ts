@@ -17,7 +17,7 @@ test('Navbar links', async ({ page }) => {
   // Assert that the cookie consent banner is no longer visible
   await expect(page.getByRole('button', { name: 'Deny all' })).not.toBeVisible();
   // Assert that the Investors page has the correct heading
-  await expect(page.getByRole('heading', { name: 'Investor Relations' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Investor Relations fail' })).toBeVisible();
 });
 
 test('Blog links', async ({ page }) => {
