@@ -25,6 +25,4 @@ test('Blog links', async ({ page }) => {
   await page.getByRole('link', { name: 'All Insights' }).click();
   // Assert that the blog page has the correct heading
   await expect(page.getByRole('heading', { name: 'Blog' })).toBeVisible();
-
-
 });
